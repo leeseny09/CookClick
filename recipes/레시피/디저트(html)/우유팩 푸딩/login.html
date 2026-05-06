@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                border: none;
+            }
+
+            header {
+                display: flex;
+                background-color: #0e4a30;
+                margin: auto;
+                height: 20vh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header > h1 {
+                font-size: 60px;
+                color: #ffff;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            body {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .login {
+                width: 250px;
+                height: 40vh;
+                padding: 15vh;
+            }
+
+            h2 {
+                font-size: 40px;
+                color: #0e4a30;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            input {
+                width: 100%;
+                height: 48px;
+                padding: 0 10px;
+                box-sizing: border-box;
+                margin-bottom: 16px;
+                border-radius: 6px;
+                background-color: #F8F8F8;
+            }
+
+            div.login {
+                margin:auto ;
+                text-align: center;
+            }
+
+            #login-form > input[type="submit"] {
+                color: #fff;
+                font-size: 16px;
+                background-color: #0e4a30;
+                margin-top: 20px;
+            }
+            
+            a {
+                color: #D2D2D2;
+                text-decoration: none;
+            }
+
+            footer {
+                background-color: #0e4a30;
+                height: 15vh;
+            }
+            header a {
+                color: #ffff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">CookClick</a></h1>
+        </header>
+
+        <div class="login">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" name="userName" placeholder="Email">
+                <input type="password" name="userPassword" placeholder="Password">
+                <input type="submit" value="Login">
+                <span>
+                    <a href="passwordlost">비밀번호 찾기 |</a> 
+                    <a href="idlost">아이디 찾기 |</a>
+                    <a href="agree.html">회원가입</a>
+                </span>
+            </form>
+        </div>
+        
+        <footer></footer>
+    </body>
+</html>

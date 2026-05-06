@@ -1,0 +1,114 @@
+body {
+    background-color: #fefeff;
+    padding: 0;
+    margin: 0;
+}
+
+.feature {
+    width: 90vw;
+    height: 55vw;
+    max-width: 1100px;
+    max-height: 550px;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.feature > div {
+    width: 45%;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+}
+
+.feature > div > a {
+    width: 60%;
+    aspect-ratio: 5 / 7;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    border-radius: 25px;
+    transition: scale 0.2s;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: unset;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: min(calc(8px + 0.9vw), 18px);
+}
+
+.feature > div > a:hover {
+    /* animation: shake 0.4s; */
+    scale: 1.1;
+    border: 3px solid forestgreen;
+}
+
+.feature > div > a img {
+    width: 70%;
+    height: 50%;
+    background-color: gray;
+    margin: 10%;
+    align-self: center;
+}
+
+.feature > div > a p {
+    margin: 2% auto;
+}
+
+.feature > div > a .name {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25%, 75% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.today {
+    height: auto;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+.today > h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 2% auto;
+}
+
+.today > div {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.today > div > a {
+    text-decoration: none;
+    color: #545454;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.today > div > a:hover {
+    background-color: aliceblue;
+}
+
+.today > iframe {
+    border-style: none;
+}

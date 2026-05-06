@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+             padding: 0;
+             margin: 0;
+             border: none;
+             background-color: white;}
+             
+
+        header{
+            background-color: #0E4A30;
+            padding: 50px;
+            margin:0px 0px;
+        }
+        a{
+            color: #ffff;
+            text-decoration: none;
+            font-size: 60px;
+            text-align: center;
+        }
+        h1{
+            text-align:center;
+        }
+        p{
+            margin: 50px;
+            font-size: 25px;
+            color:rgb(34, 32, 32);
+            text-align: center;
+        }
+
+        #information{ 
+            margin: auto;
+            width: 600px;
+        }
+        .a{
+            width: 100%;
+            height: 48px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            background-color: #F8F8F8;}
+        #email{
+            width: 85%;
+            height: 48px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            background-color: #f8f8f8;
+        }
+        #duplication{
+            width: 14%;
+            height: 48px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            background-color: #a5a5a5;
+        }
+        div{
+            border: 1px ;
+            padding: 15px 5px;
+            background-color: #F8F8F8;
+    
+        }
+        span{
+            color: #75758A;
+        }
+        footer{
+            background-color: #0E4A30;
+            padding: 100px;
+            margin: auto;
+        }
+        .submit{
+            width: 100%;
+            height: 48px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 70px;
+            border-radius: 6px;
+            color:white;
+            background-color: #0E4A30;
+    
+        }
+    </style>
+</head>
+<body>
+    <form id="information">
+    <br><br><br><br><br>
+    아이디 변경 <br>
+    <input type="email" placeholder="email" id="email">
+    <input type="submit" value="중복확인" id="duplication">
+    <br><br>
+    비밀번호 변경<input type="password" placeholder="password" class="a">
+    <br><br>
+    이름 변경<input type="text" placeholder="name" class="a">
+    <br><br>
+    생년월일 변경<input type="date" class="a">
+    <br><br>
+    전화번호 변경<input type="tel" placeholder="000-0000-0000" class="a">
+    <br><br>
+    주소 변경<br>
+    <input type="text" class="a"  placeholder="addres" ><br>    
+    <br><br>   
+    <input type="submit" value="정보수정" class="submit">
+    </form>
+</body>
+</html>

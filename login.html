@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                border: none;
+            }
+
+            header {
+                display: flex;
+                background-color: #325C4B;
+                margin: auto;
+                height: 20vh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header > h1 {
+                font-size: 70px;
+                color: #ffff;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+            }
+
+            .login {
+                width: 500px;
+                height: 60vh;
+                padding: 15vh;
+                
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .login h2 {
+                font-size: 40px;
+                color: #325C4B;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            input {
+                width: 100%;
+                height: 48px;
+                padding: 0 10px;
+                box-sizing: border-box;
+                margin-bottom: 16px;
+                border-radius: 6px;
+                background-color: #F8F8F8;
+            }
+
+            div.login {
+                
+                margin:auto ;
+                text-align: center;
+                display: flex;
+                height: auto;
+            }
+
+            #login-form > input[type="submit"] {
+                color: #fff;
+                font-size: 16px;
+                background-color: #325C4B;
+                margin-top: 20px;
+            }
+            
+            a {
+                color: #575555;
+                text-decoration: none;
+            }
+
+            header a {
+                color: #ffff;
+            }
+
+            footer {
+                background-color: #325c4b;
+                color: #fff;
+                text-align: center;
+                font-size: 1vh;
+                padding: 1vh 0;
+            }
+
+            footer h1 {
+                font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
+                margin-block-start: 0.67em;
+                margin-block-end: 0.67em;
+            }
+
+            footer h2 {
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+            }
+
+            footer div {
+                display: flex;
+                justify-content: center;
+            }
+
+            footer p, footer h4 {
+                margin: 0.5vh 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">CookClick</a></h1>
+        </header>
+
+        <div class="login">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" name="userName" placeholder="Email">
+                <input type="password" name="userPassword" placeholder="Password">
+                <input type="submit" value="Login">
+                <span>
+                    <a href="passwordlost">비밀번호 찾기 |</a> 
+                    <a href="idlost">아이디 찾기 |</a>
+                    <a href="agree.html">회원가입</a>
+                </span>
+            </form>
+        </div>
+        
+        <footer>
+            <h1>CookClick</h1>
+            <div>
+                <h4>CookClick ㏇</h4>
+                <p>서울특별시 구로구 경인로 445</p>
+            </div>
+            <div>
+                <p>대표 : 김은구</p>
+                <p>사업자등록번호 : 001-01-00001</p>
+            </div>
+            <div>
+                <p>대표번호: +82)10-2463-6873</p>
+                <p>팩스번호: +82)1-234-5679</p>
+                <p>홈페이지: silvernine999.github.io/CookClick/</p>
+            </div>
+            <h2>Copyright ⓒ CookClick ㏇ All Rights Reserved.</h2>
+        </footer>
+    </body>
+</html>

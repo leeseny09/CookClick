@@ -1,0 +1,79 @@
+body {
+    background-color: #fff;
+    color: #49403c;
+    padding: 0;
+    margin: 0;
+}
+
+/* #region Main */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main hr {
+    width: 50%;
+    border: 1px solid #49403c;
+}
+
+/* #region Headline */
+#headline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#headline img {
+    width: 30%;
+    height: auto;
+}
+
+#headline h1 {
+    font-family: 궁서체;
+}
+/* #endregion */
+
+/* #region Ingredients */
+#ingredients {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredients h2 {
+    margin: 0;
+}
+
+#ingredients hr {
+    width: 100%;
+    border-color: #829e7c;
+}
+
+#ingredients ul li hr {
+    border-color: #bebebe;
+}
+
+#ingredients ul, #ingredients li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ingredients > ul > li {
+    margin-bottom: 2vh;
+}
+
+#ingredients li > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ingredients li > div > div:last-of-type {
+    color: #626262;
+}
+/* #endregion */
+
+/* #endregion */

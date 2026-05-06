@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ *{
+  margin: 0;
+ }
+  </style>
+  <link rel="stylesheet" href="abc.css">
+  <link rel="stylesheet" href="../header.css">
+</head>
+
+<body>
+  <div id="topmenu">
+    <div>
+      <a href="../write.html">Write</a>
+      <a href="../event.html">Event</a>
+      <a href="../like.html">Like</a>
+      <a href="../cart.html">Cart</a>
+      <a href="abc.html">MyPage</a>
+    </div>
+    <div>
+      <a href="../login.html">Sign in</a>
+      <a href="../agree.html">Sign up</a>
+    </div>
+  </div>
+  <header>
+    <a href="../index.html">CookClick</a>
+    <form>
+      <input type="text" placeholder="레시피 검색..." name="search">
+      <button type="submit">검색</button>
+    </form>
+  </header>
+  <div class="container">
+    <h2>My Page</h2>
+    <hr>
+    <div id="up_profile"><!-- 프로필 -->
+      <img src="../images/profile.png" width="100" height="100" id="profile">
+    
+        <span id="name">NAME</span>
+      
+    </div>
+    <div class="main">
+      <input type="radio" id="tab-1" name="show" checked>
+      <input type="radio" id="tab-2" name="show">
+      <input type="radio" id="tab-3" name="show">
+
+      <div class="tab"> <!-- input 이름표 -->
+        <label for="tab-1">정보 수정</label>
+        <label for="tab-2">쿠폰함</label>
+        <label for="tab-3">고객센터</label>
+      </div>
+      <div class="content">
+        <div class="content-click">
+          <!-- 정보수정 -->
+          <iframe src="information.html" class="frame"></iframe>
+        </div>
+        <div class="content-click">
+          <!-- 쿠폰함 -->
+          <iframe src="coupon.html" class="frame"></iframe>
+        </div>
+        <div class="content-click">
+          <!-- 고객센터 -->
+          <iframe src="service-center.html" class="frame"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h1>CookClick</h1>
+    <div>
+        <h4>CookClick ㏇</h4>
+        <p>서울특별시 구로구 경인로 445</p>
+    </div>
+    <div>
+        <p>대표 : 김은구</p>
+        <p>사업자등록번호 : 001-01-00001</p>
+    </div>
+    <div>
+        <p>대표번호: +82)10-2463-6873</p>
+        <p>팩스번호: +82)1-234-5679</p>
+        <p>홈페이지: silvernine999.github.io/CookClick/</p>
+    </div>
+    <h2>Copyright ⓒ CookClick ㏇ All Rights Reserved.</h2>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.menu {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 1vw;
+    box-sizing: border-box;
+}
+.menu a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #49403c;
+    text-decoration: none;
+}
+.menu a div {
+    width: 7vw;
+    height: 7vw;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+    background-size: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-position: center;
+    transition: .3s;
+}
+.menu a span {
+    margin-top: 5%;
+    font-size: calc(10px + 0.5vw);
+}
+.menu a:hover div {
+    background-size: 120%;
+}

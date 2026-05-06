@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div id="topmenu">
+        <div>
+            <a href="write.html">Write</a>
+            <a href="event.html">Event</a>
+            <a href="like.html">Like</a>
+            <a href="cart.html">Cart</a>
+            <a href="mypage/abc.html">MyPage</a>
+        </div>
+        <div>
+            <a href="login.html">Sign in</a>
+            <a href="agree.html">Sign up</a>
+        </div>
+    </div>
+    <header>
+        <a href="index.html">CookClick</a>
+        <form>
+            <input type="text" placeholder="레시피 검색..." name="search">
+            <button type="submit">검색</button>
+        </form>
+    </header>
+
+    <main>
+        <h1>Cart</h1>
+        <hr>
+
+        <div class="cart-container" style="overflow: scroll; height: 550px;">
+            <section>
+                <div class="check">
+                    <input type="checkbox"> 모두선택
+                </div>
+                <div class="row-data">
+                    <div class="check2"><input type="checkbox"></div>
+                    <div class="img"><img src="images/커버춰초콜릿.jpg" alt="초콜릿 이미지"></div>
+                    <div class="mid-info">
+                        <div class="name">
+                            <span>커버춰 초콜릿</span>
+                            <div class="box"><span>X</span></div>
+                        </div>
+                        <div class="option">
+                            <span>8,000원</span> 
+                            <input type="number" min="1" max="10" step="1" value="1">
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>8,000원</span>
+                    </div>
+                </div>
+
+                <div class="row-data">
+                    <div class="check2"><input type="checkbox"></div>
+                    <div class="img"><img src="images/칵테일새우.jpg" alt="칵테일새우"></div>
+                    <div class="mid-info">
+                        <div class="name">
+                            <span>칵테일 새우</span>
+                            <div class="box"><span>X</span></div>
+                        </div>
+                        <div class="option">
+                            <span>9,900원</span> 
+                            <input type="number" min="1" max="10" step="1" value="1">
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>9,900원</span>
+                    </div>
+                </div>
+
+                <div class="row-data">
+                    <div class="check2"><input type="checkbox"></div>
+                    <div class="img"><img src="images/다진마늘.jpg" alt="다진마늘"></div>
+                    <div class="mid-info">
+                        <div class="name">
+                            <span>다진마늘</span>
+                            <div class="box"><span>X</span></div>
+                        </div>
+                        <div class="option">
+                            <span>5.500원</span> 
+                            <input type="number" min="1" max="10" step="1" value="1">
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>5,500원</span>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="coupon">
+            상품 쿠폰 할인
+            <select>
+                <option value="select">선택</option>
+                <option value="30" selected>30% 할인 Coupon</option>
+                <option value="100">100원 Coupon</option>
+            </select>
+        </div>
+
+        <div class="price-summary">
+            <h1>최종 결제금액</h1>
+            <div>
+                <span>상품금액</span>
+                <span>[23,400원]</span>
+            </div>
+            <hr>
+            <div>
+                <span>배송비</span>
+                <span>[2,500원]</span>
+            </div>
+            <hr>
+            <div>
+                <span>할인금액</span>
+                <span>[7,020원]</span>
+            </div>
+            <hr>
+            <h4>
+                <span>결제금액</span>
+                <span>[18,880원]</span>
+            </h4>
+        </div>
+
+        <div class="purchase">
+            <button class="btn">구매하기</button>
+        </div>
+    </main>
+
+    <footer>
+        <h1>CookClick</h1>
+        <div>
+            <h4>CookClick ㏇</h4>
+            <p>서울특별시 구로구 경인로 445</p>
+        </div>
+        <div>
+            <p>대표 : 김은구</p>
+            <p>사업자등록번호 : 001-01-00001</p>
+        </div>
+        <div>
+            <p>대표번호: +82)10-2463-6873</p>
+            <p>팩스번호: +82)1-234-5679</p>
+            <p>홈페이지: silvernine999.github.io/CookClick/</p>
+        </div>
+        <h2>Copyright ⓒ CookClick ㏇ All Rights Reserved.</h2>
+    </footer>
+</body>
+</html>

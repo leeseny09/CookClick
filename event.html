@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+         body {
+            background-color: #fefeff;
+           
+        }
+        
+     
+       
+       .txt{
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        img{
+            width: 500px;
+            border-radius: 10px;
+        }
+        hr{
+            width: 50%; margin-left: 25%;
+        }
+        .main {
+            display: flex;
+            margin: 0% auto;
+            text-align: center;
+            width: 1000px;
+            height: 1000px;
+            line-height: 70px;
+            
+            
+        
+        }
+        .main button{
+            border: none;
+            width: 500px;
+            height: 50px;
+            border-radius: 20px;
+           
+
+        }
+        
+        #urlcopy{
+            width: 250px;
+        }
+        .main p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+     
+        button:hover{
+            background-color: #cecbcb;
+            border: 1px solid #cecbcb;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="topmenu">
+        <div>
+            <a href="write.html">Write</a>
+            <a href="event.html">Event</a>
+            <a href="like.html">Like</a>
+            <a href="cart.html">Cart</a>
+            <a href="mypage/abc.html">MyPage</a>
+        </div>
+        <div>
+            <a href="login.html">Sign in</a>
+            <a href="agree.html">Sign up</a>
+        </div>
+    </div>
+    <header>
+        <a href="index.html">CookClick</a>
+        <form>
+            <input type="text" placeholder="레시피 검색..." name="search">
+            <button type="submit">검색</button>
+        </form>
+    </header>
+    <h1 class="txt">Event</h1>
+    <hr>
+    <br>
+
+    <form class="main">
+    <div class="event">
+        <P>친구 초대 30% COUPON</P>
+        <img src="images/30coupon.png" alt=""><br>
+        <button class="fv" id="urlcopy"> 친구 초대하기</button>
+        <button onclick="showCouponAlert()" class="fv" style="width: 250px;">친구 초대쿠폰 받기</button><br>
+        
+        <br>
+        <P>첫 주문 100원 COUPON</P>
+        <img src="images/100coupon.png" alt="">
+        
+        <button onclick="first()">첫 주문 쿠폰 받기</button>
+      </div>
+    </form>
+
+
+    <script>
+     
+      function showCouponAlert() {
+        window.alert("30% 쿠폰을 받았습니다!");
+      }
+
+      function first() {
+        window.alert("첫 주문 100원 쿠폰을 받았습니다! *10000원 이상 구매 시 적용됩니다.*");
+      }
+
+      // 클릭 이벤트 핸들러
+      document.getElementById("urlcopy").addEventListener("click", function() {
+            // 복사할 URL
+            var urlToCopy = "https://CookClick.com"; // 원하는 URL로 변경
+
+            // URL을 클립보드에 복사하기
+            navigator.clipboard.writeText(urlToCopy)
+                .then(function() {
+                    // 복사 성공 시 알림창 표시
+                    alert("URL이 복사되었습니다: " + urlToCopy);
+                })
+                .catch(function(error) {
+                    // 복사 실패 시 오류 메시지 표시
+                    console.error("URL 복사 실패: ", error);
+                });
+        });
+    </script>
+
+<footer>
+    <h1>CookClick</h1>
+    <div>
+        <h4>CookClick ㏇</h4>
+        <p>서울특별시 구로구 경인로 445</p>
+    </div>
+    <div>
+        <p>대표 : 김은구</p>
+        <p>사업자등록번호 : 001-01-00001</p>
+    </div>
+    <div>
+        <p>대표번호: +82)10-2463-6873</p>
+        <p>팩스번호: +82)1-234-5679</p>
+        <p>홈페이지: silvernine999.github.io/CookClick/</p>
+    </div>
+    <h2>Copyright ⓒ CookClick ㏇ All Rights Reserved.</h2>
+</footer>
+</body>
+
+</html>
+

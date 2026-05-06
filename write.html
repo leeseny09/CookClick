@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+      
+        body {
+            background-color: #fefeff;
+           
+        }
+        .container h1 {
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            font-weight: bolder;
+            margin-bottom: 30px;
+            margin-top: 50px;
+            color: #131313;
+            text-align: center;
+        }
+        hr{
+            width: 50%;
+        }
+        .button {
+            width: 200px;
+            height: 100px;
+            border: none;
+        }
+        #mainimg {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .button2 {
+            background-color: #5b5b5f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 5px;
+            width: 80px;
+
+        }
+        
+        label {
+            margin: 20px;
+        }
+        textarea {
+            width: 300px;
+            height: 200px;
+            resize: none;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea::placeholder {
+            font-size: medium;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        .recipe {
+            text-align: center;
+            padding: 30px 30px 10px 30px;
+
+        }
+        .image {
+            text-align: center;
+        }
+        .container input[type=text], input[type=number] {
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid #d4d2d2;
+        }
+        input[type=number] {
+            text-align: center;
+            font-size: 15px;
+            /* 폰트 크기 조절 */
+            width: 100px;
+        }
+        .title {
+            width: 300px;
+        }
+        select {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            appearance: none;
+            color: #444;
+            background-color: #fff;
+            padding: 0.5em 1.5em 0.5em 1.5em;
+            margin: 10px;
+            border: 2px solid #d4d2d2;
+            border-radius: 5px;
+        }
+
+        input[type=image] {
+            width: 200px;
+            height: 204px;
+        }
+        .section {
+            text-align: center;
+            padding-top: 40px;
+        }
+        .image1>input[type=image] {
+            float: bottom;
+        }
+        #plus {
+            text-align: center;
+            margin-bottom: px;
+            padding-bottom: 0px
+        }
+        
+        .step {
+            padding-top: 40px;
+        }
+        .button-area {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .upload {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .upload input {
+            margin: 5px;
+            padding: 10px 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;            
+        }
+        input[type=button]:hover{
+            background-color: #325c4b; 
+            cursor: pointer; 
+
+        }
+        .upload input:hover{
+            background-color: #325c4b;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div id="topmenu">
+        <div>
+            <a href="write.html">Write</a>
+            <a href="event.html">Event</a>
+            <a href="like.html">Like</a>
+            <a href="cart.html">Cart</a>
+            <a href="mypage/abc.html">MyPage</a>
+        </div>
+        <div>
+            <a href="login.html">Sign in</a>
+            <a href="agree.html">Sign up</a>
+        </div>
+    </div>
+    <header>
+        <a href="index.html">CookClick</a>
+        <form>
+            <input type="text" placeholder="레시피 검색..." name="search">
+            <button type="submit">검색</button>
+        </form>
+    </header>
+    <div class="container">
+        <h1> 나의 레시피 공유하기 </h1>
+        <hr><br>
+        <nav>
+            <div id="mainimg">
+                <input type="image" src="images/단락 텍스트.png">
+            </div><br>
+            <div class="recipe">
+                난이도
+                <select>
+                    <option>난이도</option>
+                    <option>★☆☆</option>
+                    <option>★★☆</option>
+                    <option>★★★</option>
+                </select>
+                소요 시간
+                <select>
+                    <option> 소요 시간</option>
+                    <option>30분 이하</option>
+                    <option>45분</option>
+                    <option>1시간</option>
+                    <option>1시간 반</option>
+                    <option>2시간 이상</option>
+                </select><br><br>
+                <div class="input">
+                    <label>레시피 제목</label><input type="text" placeholder="레시피 제목을 적어주세요" class="title"><br><br>
+
+                    <label>재료</label><input type="text" placeholder="Ex)돼지고기">
+                    <label>수량</label><input type="number" min="0">
+                    <label>단위</label><input type="text" placeholder="Ex)g,ml,개"><br><br>
+
+                    <label>재료</label><input type="text" placeholder="Ex)돼지고기">
+                    <label>수량</label><input type="number" min="0">
+                    <label>단위</label><input type="text" placeholder="Ex)g,ml,개"><br><br>
+
+                    <label>재료</label><input type="text" placeholder="Ex)돼지고기">
+                    <label>수량</label><input type="number" min="0">
+                    <label>단위</label><input type="text" placeholder="Ex)g,ml,개"><br><br>
+
+                    <label>재료</label><input type="text" placeholder="Ex)돼지고기">
+                    <label>수량</label><input type="number" min="0">
+                    <label>단위</label><input type="text" placeholder="Ex)g,ml,개"><br><br>
+
+                    <label>재료</label><input type="text" placeholder="Ex)돼지고기">
+                    <label>수량</label><input type="number" min="0">
+                    <label>단위</label><input type="text" placeholder="Ex)g,ml,개"><br><br>
+                </div>
+            </div>
+            <div id="plus">
+                <input type="button" value="+ 추가" class="button2"><br>
+            </div>
+            <div class="section">
+                <div class="step">
+                    <input type="image" src="images/레시피 사진 업로드.png" class="button">
+                    <textarea placeholder="STEP 1 레시피를 입력해주세요" cols="30" rows="5"></textarea><br>
+                </div>
+                <div class="step">
+                    <input type="image" src="images/레시피 사진 업로드.png" class="button">
+                    <textarea placeholder="STEP 2 레시피를 입력해주세요" cols="30" rows="5"></textarea><br>
+                </div>
+                <div class="step">
+                    <input type="image" src="images/레시피 사진 업로드.png" class="button">
+                    <textarea placeholder="STEP 3 레시피를 입력해주세요" cols="30" rows="5"></textarea><br>
+                </div>
+                <div class="step">
+                    <input type="image" src="images/레시피 사진 업로드.png" class="button">
+                    <textarea placeholder="STEP 4 레시피를 입력해주세요" cols="30" rows="5"></textarea><br>
+                </div>
+
+            </div>
+            <div class="button-area">
+                <input type="button" value="+ 추가" class="button2"><br>
+                <div class="upload">
+                    <input type="button" value="공개하기" class="button2">
+                    <input type="button" value="취소" class="button2">
+                </div>
+            </div>
+    </div>
+
+    </nav>
+    <footer>
+        <h1>CookClick</h1>
+        <div>
+            <h4>CookClick ㏇</h4>
+            <p>서울특별시 구로구 경인로 445</p>
+        </div>
+        <div>
+            <p>대표 : 김은구</p>
+            <p>사업자등록번호 : 001-01-00001</p>
+        </div>
+        <div>
+            <p>대표번호: +82)10-2463-6873</p>
+            <p>팩스번호: +82)1-234-5679</p>
+            <p>홈페이지: silvernine999.github.io/CookClick/</p>
+        </div>
+        <h2>Copyright ⓒ CookClick ㏇ All Rights Reserved.</h2>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/*한식메뉴창css*/
+.main h3{ text-align: center;
+    color: #49403c;
+}
+
+.main a {
+    text-decoration: none;
+    transition: scale 0.2s;
+}
+
+.main a:hover {
+    scale: 1.1;
+}
+
+.main a img {
+    margin: 10px;
+}
+
+.main a p {
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+    color: #49403c;
+}
+
+.like {
+    cursor: pointer;
+}
+
+.like input[type="checkbox"] {
+    display: none;
+}
+
+.like span {
+    font-size: 20px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+}
+
+.like input[type="checkbox"]:checked + span:before {
+    content: '❤︎';
+    color: red;
+}
+
+.like input[type="checkbox"]:not(:checked) + span:before {
+    content: '❤︎';
+    color: black;
+}
+
+#first{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    
+}
+#second{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+#thrid{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+#fourth{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}

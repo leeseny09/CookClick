@@ -1,0 +1,148 @@
+body {
+    background-color: #fff;
+    color: #49403c;
+    padding: 0;
+    margin: 0;
+}
+
+/* #region Main */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main hr {
+    width: 50%;
+    border: 1px solid #49403c;
+}
+
+/* #region Headline */
+#headline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#headline img {
+    width: 30%;
+    height: auto;
+}
+/* #endregion */
+
+/* #region Ingredients */
+#ingredients {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredients h2 {
+    margin: 0;
+}
+
+#ingredients hr {
+    width: 100%;
+    border-color: #829e7c;
+}
+
+#ingredients ul li hr {
+    border-color: #bebebe;
+}
+
+#ingredients ul, #ingredients li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ingredients > ul > li {
+    margin-bottom: 2vh;
+}
+
+#ingredients li > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ingredients li > div > div:last-of-type {
+    color: #626262;
+}
+
+/* #endregion */
+
+/* #region Rcipe */
+
+#recipe {
+    width: 50%;
+    margin-top: 5%;
+}
+
+#recipe ol {
+    counter-reset: list-counter;
+    list-style-position: inside;
+    padding: 5% 0;
+    border-top: 2px solid black;
+}
+
+#recipe ol li {
+    counter-increment: list-counter;
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+#recipe ol li::before {
+    content: "Step " counter(list-counter);
+    position: absolute;
+    right: 50%;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #325c4b;
+}
+
+#recipe ol li img {
+    width: 20vw;
+    height: 20vw;
+}
+
+#recipe ol li p {
+    width: 20vw;
+    margin: 5% 2%;
+    border-top: 2px solid black;
+    padding-top: 2%;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Cart */
+
+#cart {
+    position: fixed;
+    top: 75%;
+    left: 75%;
+    width: 20%;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    transform: translateY(-100%);
+}
+
+#cart img {
+    background-color: #49403c;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#cart .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+/* #endregion */

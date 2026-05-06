@@ -1,0 +1,200 @@
+
+
+body {
+    background-color: #fff;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+}
+
+img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #cecbcb;
+    border: 1px solid #cecbcb;
+}
+
+.coupon {
+    border: 1px solid #cecbcb;
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+select {
+    color: black;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #87490cff;
+    height: 27px;
+    width: 200px;
+    text-align: center;
+    font-size: 1em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+section {
+    width: 80%;
+    padding-bottom: 2%;
+    margin: 0 auto;
+}
+
+section img {
+    width: 18px;
+}
+
+section h1 {
+    width: 80%;
+    margin: 0 auto;
+    color: #222;
+    border-bottom: 1.5px solid #888;
+}
+
+section .check {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8em;
+}
+
+.row-data {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.row-data img {
+    width: 100px;
+    height: 100px;
+}
+
+.row-data .mid-info {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    font-size: 1em;
+}
+
+.row-data .mid-info div {
+    height: 50%;
+    padding: 10px;
+}
+
+.row-data .mid-info .name {
+    border-bottom: 1px solid #ddd;
+}
+
+.row-data .name .box {
+    border: 1px solid #888;
+    width: 15px;
+    height: 15px;
+    float: right;
+    text-align: center;
+    font-size: 11px;
+}
+
+.row-data .price {
+    display: flex;
+    border-left: 1px solid #ddd;
+    align-items: center;
+}
+
+.option span {
+    font-size: 0.8em;
+    color: #87490cff;
+    padding: 10px;
+    margin: 0 -2% 0 -1%;
+}
+
+.option input {
+    width: 50px;
+    height: 18px;
+}
+
+main p {
+    margin: 1% 0 -3% 17%;
+    color: #87490cff;
+    border: 4px solid #ddd;
+    width: 60%;
+    padding: 1% 3%;
+}
+
+label {
+    float: right;
+}
+
+.btn {
+    background-color: #325c4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    float: right;
+    margin: -1% 26% 0 0;
+}
+
+.price-summary {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-summary h1 {
+    font-size: 24px;
+    margin-bottom: 1%;
+    margin-right: 22%;
+}
+.price-summary hr {
+    width: 30%;
+    min-width: 500px;
+    margin: 1%;
+}
+.price-summary div, .price-summary h4 {
+    width: 30%;
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%; margin-bottom: 5%;
+    text-align: center;
+    width: 100%;
+}
+
+.purchase button {
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 0;
+}

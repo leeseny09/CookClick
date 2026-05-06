@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    
+    <style>
+            *{
+             padding: 0;
+             margin: 0;
+             border: none;}
+
+        header{
+            background-color: #325C4B;
+            padding: 50px;
+            margin:0px 0px;
+        }
+        a{
+            color: #ffff;
+            text-decoration: none;
+            font-size: 70px;
+            text-align: center;
+            font-weight: 1700;
+        }
+        header h1{
+            text-align:center;
+        }
+        form p{
+            margin: 50px;
+            font-size: 25px;
+            color:rgb(34, 32, 32);
+            text-align: center;
+        }
+
+        #signup-form{ 
+            margin: auto;
+            width: 600px;
+        }
+        .a{
+            width: 100%;
+            height: 48px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            background-color: #F8F8F8;}
+
+        form div{
+            border: 1px ;
+            padding: 15px 5px;
+            background-color: #F8F8F8;
+    
+        }
+        span{
+            color: #75758A;
+        }
+        .submit{
+            width: 100%;
+            height: 48px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 70px;
+            border-radius: 6px;
+            color:white;
+            background-color: #325C4B;
+    
+        }
+
+        #gd {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        footer {
+            background-color: #325c4b;
+            color: #fff;
+            text-align: center;
+            font-size: 1vh;
+            padding: 1vh 0;
+        }
+
+        footer h1 {
+            font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+        }
+
+        footer h2 {
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer p, footer h4 {
+            margin: 0.5vh 10px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">CookClick</a></h1>
+    </header>
+<br><br>
+
+
+
+<form id="signup-form">
+    <p>회원가입</p>
+    <hr>
+아이디 <input type="email" placeholder="email" class="a"><br>
+비밀번호 <input type="password" placeholder="password" class="a"><br>
+비밀번호 확인 <input type="password" placeholder="password check" class="a"><br>
+
+이름 <input type="text" placeholder="name" class="a"><br>
+
+생년월일  <input type="date" class="a" ><br>
+
+성별
+<div id="gd">
+<label><input type="radio" name="gender"><span>남</span></label><br>
+<label><input type="radio" name="gender"><span>여</span></label><br>
+
+</div>
+<br>
+
+전화번호 <input type="tel" placeholder="000-0000-0000" class="a"><br>
+
+주소<br>
+	
+	
+	<input type="text" class="a"  placeholder="addres" ><br>
+	
+<br><br>
+
+<input type="submit" value="회원가입" class="submit">
+
+
+</form>
+<footer>
+    <h1>CookClick</h1>
+    <div>
+        <h4>CookClick ㏇</h4>
+        <p>서울특별시 구로구 경인로 445</p>
+    </div>
+    <div>
+        <p>대표 : 김은구</p>
+        <p>사업자등록번호 : 001-01-00001</p>
+    </div>
+    <div>
+        <p>대표번호: +82)10-2463-6873</p>
+        <p>팩스번호: +82)1-234-5679</p>
+        <p>홈페이지: silvernine999.github.io/CookClick/</p>
+    </div>
+    <h2>Copyright ⓒ CookClick ㏇ All Rights Reserved.</h2>
+</footer>
+
+
+
+
+</body>
+</html>

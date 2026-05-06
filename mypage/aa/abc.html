@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(abc.css);
+        @import url(header.css);
+    </style>
+</head>
+<body>
+    <div id="topmenu">
+      <a href="signup.html">회원가입</a>
+      <a href="login.html">로그인</a>
+    </div>
+    <header>
+    <a href="">CookClick</a>
+      <form>
+        <input type="text" placeholder="레시피 검색..." name="search">
+        <button type="submit">검색</button>
+      </form>
+    </header>
+    <div id="up_profile"><!-- 프로필 -->
+    <img src="human.jpg" width="130" height="130" id="profile">
+        <div id="profile_inf">
+            <span id="name">&nbsp;이름&nbsp;</span>
+        </div>
+    </div><br>
+  <div class="main">
+  <input type="radio" id="tab-1" name="show">
+  <input type="radio" id="tab-2" name="show" checked>
+  <input type="radio" id="tab-3" name="show">
+
+  <div class="tab"> <!-- input 이름표 -->
+    <label for="tab-1">정보 수정</label>
+    <label for="tab-2">쿠폰함</label>
+    <label for="tab-3">고객센터</label>
+  </div>
+    <div class="content">
+      <div class="content-click">
+        <!-- 정보수정 -->
+        <iframe src="information.html" class="frame"></iframe>
+      </div>
+      <div class="content-click">
+        <!-- 쿠폰함 -->
+        <iframe src="coupon.html" class="frame"></iframe>
+      </div>
+      <div class="content-click">
+        <!-- 고객센터 -->
+        <iframe src="service-center.html" class="frame"></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="bottom"></div>
+</body>
+</html>
